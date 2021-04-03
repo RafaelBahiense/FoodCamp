@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #E5E5E5;
+}
+
+.container {
+    margin: 0 auto;
+    width: 414px;
+    height: 1026px;
+    font-family: Roboto;
+    background: #EEEEEE;
+}
+
+header {
+    width: 414px;
+    height: 92px;
+    background: #CF2B2B;
+    position: fixed;
+    padding-left: 19px;
+    padding-top: 6px;
+    padding-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h1 {
+    font-family: Righteous;
+    font-size: 44px;
+    line-height: 55px;
+    color: #FFFFFF;
+}
+
+h2 {
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+/* .container > div:nth-child(2n+1) {
+    height: 69px;
+    padding: 16px;
+    background: rosybrown;
+} */
+
+h3 {
+    font-family: Righteous;
+    margin-top: 27px;
+    margin-bottom: 15px;
+    margin-left: 19px;
+    font-size: 26px;
+}
+
+.container > div:nth-child(2n+4) {
+    display: flex;
+    overflow: scroll;
+    padding-left: 3px;
+}
+
+.item {
+    height: 216px;
+    width: 172px;
+    padding: 14px;
+    margin-left: 16px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.drinks div {
+    height: 202px;
+}
+
+.desserts div {
+    height: 197px;
+}
+
+.item p:nth-child(2) {
+    font-weight: 700;
+    font-size: 16px;
+    color: #333333;
+}
+
+.item p:nth-child(3) {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    color: #A6A6A6;
+}
+
+.item p:last-child {
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
+
+.container > div:nth-child(2) {
+    height: 96px;
+}
+
+.container > div:last-child {
+    width: 414px;
+    height: 92px;
+    background: #FFFFFF;
+    position: fixed;
+    top: 934px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    width: 364px;
+    height: 61px;
+    pointer-events: none;
+    border-radius: 50px;
+    background: #CBCBCB;
+    border: none;
+    font: inherit;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
+/* Hide scrollbar */
+.container > div:nth-child(2n+4) {
+    scrollbar-width: none;              /* Firefox */
+    -ms-overflow-style: none;           /* Internet Explorer 10+ */
+}
+
+.container::-webkit-scrollbar { 
+    display: none;                      /* Chrome Safari */
+}
