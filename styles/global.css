@@ -111,7 +111,7 @@ img {
     height: 92px;
     background: #FFFFFF;
     position: fixed;
-    top: 934px;
+    bottom: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
