@@ -1,6 +1,7 @@
 let foodSelected = false;
 let drinksSelected = false;
 let dessertsSelected = false;
+let wpp;
 
 function removeClass(elementList) {  
     for (var i = 0; i < elementList.length; i++) {
@@ -70,5 +71,8 @@ function buildCheckout() {
     total = (Math.round((total) * 10) / 10).toFixed(2);
     total = "R$ " + total.replace(".", ",");
     document.querySelector(".total").innerHTML = total;
-
+    wpp = "Olá, gostaria de fazer o pedido:\n" + "- Prato: " + itemsListCheckout[0].innerHTML + "\n- Bebida: " + itemsListCheckout[1].innerHTML + "\n- Sobremesa: " + itemsListCheckout[2].innerHTML + "\nTotal: " + total;
+    wpp = encodeURIComponent(wpp);
+    wpp = "https://wa.me/5521912345678?text=" + wpp;
+    document.querySelector("a").href = wpp;
 }
