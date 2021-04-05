@@ -48,6 +48,12 @@ h3 {
     font-size: 26px;
 }
 
+img {
+    width: 144px;
+    height: 87px;
+    border-radius: 4px;
+}
+
 .container > div:nth-child(2n+4) {
     display: flex;
     /* overflow: scroll; */
@@ -178,7 +184,6 @@ ion-icon {
     position: absolute;
     left: calc(50% - 207px);
     top: 0px;
-
 }
 
 .finish-order {
@@ -234,6 +239,7 @@ ion-icon {
     font-weight: bold;
     font-size: 22px;
     color: #50D074;
+    pointer-events: auto;
 }
 
 .cancel {
@@ -244,4 +250,5 @@ ion-icon {
     font-weight: bold;
     font-size: 20px;
     color: #FFFFFF;
+    pointer-events: auto;
 }

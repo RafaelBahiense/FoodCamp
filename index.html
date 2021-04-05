@@ -34,22 +34,22 @@
                 </div>
             </div>
             <div class="item" id="B" onclick="foodSelect('B')">
-                <img src="images/frango_yin_yang.png" alt="">
-                <p>Frango Yin Yang</p>
-                <p>Um pouco de salada,<br>Um pouco de batata</p>
+                <img src="images/strogonoff-de-frango.jpg" alt="">
+                <p>Strogonoff</p>
+                <p>Um pouco de arroz,<br>Um pouco de batata</p>
                 <div>
-                    <p>R$ 14,90</p>
+                    <p>R$ 15,90</p>
                     <div class="fake-div">
                        <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
                 </div>
             </div>
             <div class="item" id="C" onclick="foodSelect('C')">
-                <img src="images/frango_yin_yang.png" alt="">
-                <p>Frango Yin Yang</p>
+                <img src="images/bife-acebolado.jpg" alt="">
+                <p>Bife acebolado</p>
                 <p>Um pouco de salada,<br>Um pouco de batata</p>
                 <div>
-                    <p>R$ 14,90</p>
+                    <p>R$ 16,90</p>
                     <div class="fake-div">
                        <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
@@ -72,22 +72,22 @@
                 </div>
             </div>
             <div class="item" id="E" onclick="drinksSelect('E')">
-                <img src="images/coquinha_gelada.png" alt="">
-                <p>Coquinha gelada</p>
+                <img src="images/sprite.jpg" alt="">
+                <p>Sprite limão</p>
                 <p>Lata 350ml</p>
                 <div>
-                    <p>R$ 4,90</p>
+                    <p>R$ 4,50</p>
                     <div class="fake-div">
                        <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
                 </div>
             </div>
             <div class="item" id="F" onclick="drinksSelect('F')">
-                <img src="images/coquinha_gelada.png" alt="">
-                <p>Coquinha gelada</p>
-                <p>Lata 350ml</p>
+                <img src="images/h2oh.jpg" alt="">
+                <p>H2OH limão</p>
+                <p>Garrafa 500ml</p>
                 <div>
-                    <p>R$ 4,90</p>
+                    <p>R$ 7,90</p>
                     <div class="fake-div">
                        <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
@@ -110,22 +110,22 @@
                 </div>
             </div>
             <div class="item" id="H" onclick="dessertsSelect('H')">
-                <img src="images/pudim.png" alt="">
-                <p>Pudim</p>
-                <p>Apenas pudim</p>
+                <img src="images/torta-de-limao.jpg" alt="">
+                <p>Torta de limão</p>
+                <p>Apenas uma fatia</p>
                 <div>
-                    <p>R$ 7,90</p>
+                    <p>R$ 8,90</p>
                     <div class="fake-div">
                        <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
                 </div>
             </div>
             <div class="item" id="I" onclick="dessertsSelect('I')">
-                <img src="images/pudim.png" alt="">
-                <p>Pudim</p>
-                <p>Apenas pudim</p>
+                <img src="images/torta-alema.jpg" alt="">
+                <p>Torta alemã</p>
+                <p>Apenas uma fatia</p>
                 <div>
-                    <p>R$ 7,90</p>
+                    <p>R$ 9,90</p>
                     <div class="fake-div">
                        <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
@@ -133,7 +133,7 @@
             </div>
         </div>
         <div>
-            <button>Selecione os 3 itens<br>para fechar o pedido</button>
+            <button onclick="checkoutToggle()">Selecione os 3 itens<br>para fechar o pedido</button>
         </div>
     </div>
     <div class="overlay">
@@ -159,7 +159,7 @@
             </div>
             <div>
                 <button class="ok">Tudo certo, pode pedir!</button>
-                <button class="cancel">Cancelar</button>
+                <button class="cancel" onclick="checkoutToggle()">Cancelar</button>
             </div>
         </div>
     </div>

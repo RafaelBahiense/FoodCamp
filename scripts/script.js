@@ -37,10 +37,17 @@ function dessertsSelect(id) {
     checkoutButton()
 }
 
+// checkout button
 function checkoutButton() {
     if (foodSelected === true && drinksSelected === true && dessertsSelected === true) {
         const element = document.querySelector("button");
         element.classList.add("ready");
         element.innerHTML = "Fechar pedido"
     }
+}
+
+// Overlay
+function checkoutToggle() {
+    const element = document.querySelector(".overlay");
+    element.classList.toggle("finish-order");
 }
