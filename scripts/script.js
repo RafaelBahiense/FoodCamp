@@ -22,14 +22,25 @@ function select(id, category, selected) {
 function foodSelect(id) {
     select(id, ".food .item", foodSelected)
     foodSelected = true;
+    checkoutButton()
 }
 
 function drinksSelect(id) {
     select(id, ".drinks .item", drinksSelected)
     drinksSelected = true;
+    checkoutButton()
 }
 
 function dessertsSelect(id) {
     select(id, ".desserts .item", dessertsSelected)
     dessertsSelected = true;
+    checkoutButton()
+}
+
+function checkoutButton() {
+    if (foodSelected === true && drinksSelected === true && dessertsSelected === true) {
+        const element = document.querySelector("button");
+        element.classList.add("ready");
+        element.innerHTML = "Fechar pedido"
+    }
 }

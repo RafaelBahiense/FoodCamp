@@ -50,7 +50,8 @@ h3 {
 
 .container > div:nth-child(2n+4) {
     display: flex;
-    overflow: scroll;
+    /* overflow: scroll; */
+    overflow-x: scroll;
     padding-left: 3px;
 }
 
@@ -164,7 +165,7 @@ ion-icon {
 }
 
 .ready {
-    pointer-events: none;
+    pointer-events: auto;
     background: #32B72F;
 }
 
