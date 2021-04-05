@@ -59,14 +59,16 @@ function buildCheckout() {
     let pricesListCheckout = document.querySelectorAll(".checkout-price");
     let total = 0;
     for (var i = 0; i < itemsList.length; i++) {
-        itemsListCheckout[i].innerHTML = itemsList[i].innerHTML;
-        pricesListCheckout[i].innerHTML = pricesList[i].innerHTML;
+        itemsListCheckout[i].innerHTML = itemsList[i].innerHTML.replace("R$ ", "");
+        pricesListCheckout[i].innerHTML = pricesList[i].innerHTML.replace("R$ ", "");
         let str = pricesListCheckout[i].innerHTML
         str = str.replace("R$ ", "");
         str = str.replace(",", ".");
         total += parseFloat(str);
         console.log(total);
     }
-    total = (Math.round((total) * 10) / 10).toFixed(2);;
+    total = (Math.round((total) * 10) / 10).toFixed(2);
+    total = "R$ " + total.replace(".", ",");
     document.querySelector(".total").innerHTML = total;
+
 }
