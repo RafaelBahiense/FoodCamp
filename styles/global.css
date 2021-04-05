@@ -167,3 +167,80 @@ ion-icon {
     pointer-events: none;
     background: #32B72F;
 }
+
+/* Overlay */
+.overlay {
+    display: none;
+    height: 1026px;
+    width: 414px;
+    background: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    left: calc(50% - 207px);
+    top: 0px;
+
+}
+
+.finish-order {
+    display: block;
+}
+
+.overlay > div {
+    height: 353px;
+    width: 377px;
+    margin-top: 336px;
+    margin-left: 19px;
+    background: #50D074;
+    font-family: Roboto;
+    border-radius: 9px;
+    padding: 24px;
+    padding-bottom: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.overlay-title {
+    font-weight: bold;
+    font-size: 22px;
+    color: #FFFFFF;
+}
+
+.order {
+    height: 144px;
+    width: 333px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 22px;
+    color: #FFFFFF;
+}
+
+.order > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.order > div:last-child {
+    font-weight: bold;
+}
+
+.ok {
+    width: 329px;
+    height: 52px;
+    background: #FFFFFF;
+    border-radius: 100px;
+    font-weight: bold;
+    font-size: 22px;
+    color: #50D074;
+}
+
+.cancel {
+    width: 333px;
+    height: 52px;
+    background: none;
+    border-radius: 100px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #FFFFFF;
+}
